@@ -1,0 +1,63 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  background: radial-gradient(circle at center, #2e0940 0%, #05010a 100%);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+h1 {
+  font-size: 3.5rem;
+  color: #ffcc00; 
+ 
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8), 
+               0 0 15px rgba(255, 140, 0, 0.6);
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  margin-bottom: 50px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+
+#center {
+  display: grid;
+  
+  grid-template-columns: repeat(3, 250px);
+  gap: 40px; /* Espaço entre as cartas */
+  justify-content: center; 
+  padding-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  #center {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media (max-width: 600px) {
+  #center {
+    grid-template-columns: repeat(1, 250px);
+  }
+}
