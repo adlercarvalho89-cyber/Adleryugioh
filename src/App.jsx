@@ -3,15 +3,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Yugioh from "./Pages/Yugioh";
 
-
 function App() {
-return(
-  <BrowserRouter>
-  <Routes>
-    <Route path= "/Adleryugioh/" element={<Home/>}/>
-  </Routes>
-  </BrowserRouter>
-)
+  return (
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/Adleryugioh/" element={<Home />} />
+        
+        
+        <Route path="/Adleryugioh/:cartaId" element={<Yugioh />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-  
+
 export default App;
